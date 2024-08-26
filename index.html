@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decodificador-Texto</title>
+        <link rel="stylesheet" href="./estilos/style.css">
+
+    </head>
+    <body>
+        <main class="container">
+            <img src="./assets/logo.png">
+            <section id="sessao-esquerda">
+                <article id="texto-esquerda">
+                    <h1>Decodificador de Mensagens</h1>
+
+                    <textarea name="" id="textoArea" placeholder="Digite o seu texto, Apenas letras minúsculas e sem acento."></textarea>
+                    
+                        <button id="btn-encriptografar" onclick="criptografar()">Criptografar</button>
+                        <button id="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+                    
+
+                </article>
+            </section>
+
+            <section id="sessao-direita">
+                <article id="informacao">
+                    <img src="./assets/lupa.svg" alt="">
+                    <h2 style="margin: 10px;">Nenhuma Mensagem encontrada</h2>
+                    <p id="texto">
+                        Digite um texto que você deseja <br>criptografar ou descriptografar.
+                    </p>
+                </article>
+                <article id="resultado" style="display: none;">
+                    <p id="resultadoP">
+    
+                    </p>
+                    <button id="btn-copiar" onclick="copiar()">Copiar</button>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
