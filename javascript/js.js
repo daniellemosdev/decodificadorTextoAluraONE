@@ -19,6 +19,7 @@ function processo(char) {
         default:
             criptografado += char;
     }
+    document.getElementById("resultado").style.display="none";
 }
 
 
@@ -27,7 +28,8 @@ function criptografarTudo() {
     const valores = document.getElementById("textoArea").value;
 
     for (let i = 0; i < valores.length; i++) {
-        processo(valores[i]);
+       let letra = valores[i];
+        processo(letra);
     }
 }
 
